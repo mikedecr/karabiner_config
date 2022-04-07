@@ -367,32 +367,6 @@
                         ]
                     },
                     {
-                        "description": "Post escape if left_control is pressed alone.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_control",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "escape"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "SpaceFN: Space enables SpaceFN mode (see: https://geekhack.org/index.php?topic=51069.0)",
                         "manipulators": [
                             {
@@ -680,6 +654,32 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Caps Lock to Escape on single press, Control on press and hold.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -812,26 +812,6 @@
             },
             "selected": true,
             "simple_modifications": [
-                {
-                    "from": {
-                        "key_code": "caps_lock"
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_control"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "left_control"
-                    },
-                    "to": [
-                        {
-                            "key_code": "caps_lock"
-                        }
-                    ]
-                },
                 {
                     "from": {
                         "key_code": "right_option"
