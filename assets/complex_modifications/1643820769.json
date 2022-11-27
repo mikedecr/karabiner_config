@@ -1,13 +1,13 @@
 {
-  "title": "Change fn + n/m/o/p' to page_up, page_down, home and end keys",
+  "title": "Change fn + h/n/u/o' to page_up, page_down, home and end keys",
   "rules": [
     {
-      "description": "Change fn + n/m/o/p' to page_up, page_down, home and end keys",
+      "description": "Change fn + h/n/u/o' to page_up, page_down, home and end keys",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "n",
+            "key_code": "h",
             "modifiers": {
               "mandatory": [
                 "fn"
@@ -26,7 +26,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "m",
+            "key_code": "n",
             "modifiers": {
               "mandatory": [
                 "fn"
@@ -45,7 +45,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "o",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
                 "fn"
@@ -64,7 +64,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "p",
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
                 "fn"
